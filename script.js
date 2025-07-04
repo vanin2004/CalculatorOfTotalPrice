@@ -63,7 +63,8 @@ function validateAll() {
   const today = new Date();
   today.setHours(0, 0, 0, 0);
 
-  STATE.errors = false; // unset error flag
+  STATE.errors = companyCards.length === 0; // unset error flag if there are company cards
+
   companyCards.forEach(card => {
     const startInput = card.querySelector('input[name="start_date[]"]');
     const endInput = card.querySelector('input[name="end_date[]"]');
@@ -105,9 +106,7 @@ function validateAll() {
       if (otherCard !== card && otherCard.querySelector('input[name="inn[]"]').value === innInput.value) {
         uniqueInn = false;
       }
-    }
-
-    );
+    });
 
     if (!uniqueInn) {
       errors.push(`ИНН ${innInput.value} не является уникальным.`);
@@ -131,9 +130,8 @@ function validateAll() {
       errorElement.innerHTML = "";
       card.classList.remove("invalid");
     }
-
-    setTotalPrice();
   });
+  setTotalPrice();
 }
 
 const createCompanyCard = () => {
