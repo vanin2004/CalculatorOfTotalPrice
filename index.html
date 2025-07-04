@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Помощник подбора тарифов</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-title">
+    <h1>Помощник подбора тарифов</h1>
+    <p>Пройдите несколько шагов, чтобы определить нужный вам тариф</p>
+  </div>
+
+  <div class="calculator">
+    <div id="screen-non-group" class="screen active">
+      <div class="form-row">
+        <label>Тип тарифа расширения ЛК</label>
+        <div class="btn-group">
+          <button type="button" class="toggle-btn" data-value="base">Базовый</button>
+          <button type="button" class="toggle-btn selected" data-value="extended">Профессиональный</button>
+        </div>
+      </div>
+
+      <div id="companies-list">
+        <!--     
+        <div class="company-index">Компания</div>
+        <button class="remove-btn" title="Удалить компанию">&times;</button>
+        <label>ИНН компании</label>
+        <input type="text" name="inn[]" placeholder="Введите ИНН">
+        <div class="date-row">
+          <div>
+            <label>Дата начала</label>
+            <input type="date" name="start_date[]" value="${startDate}">
+          </div>
+          <div>
+            <label>Дата окончания</label>
+            <input type="date" name="end_date[]" value="${endDate}">
+          </div>
+        </div>
+        -->
+      </div>
+
+      <button class="add-btn" id="addCompanyBtn">+ Добавить компанию</button>
+
+      <div id="error-display" class="error-list" style="display: none;"></div>
+
+      <div class="total" id="total-price">Итог: 0 ₽</div>
+      <button class="submit-btn" id="submitNonGroupBtn">Оформить</button>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.10/dayjs.min.js"></script>
+  <script src="tariffs.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
