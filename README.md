@@ -1,49 +1,37 @@
-# CalculatorOfTotalPrice
-a simple calculator that helps partners calculate the cost of connecting the Personal Account 1C-Reporting extension for the remaining term of the main 1C-Reporting license
+# CalculatorOfTotalPrice  
+простой калькулятор, который помогает партнёрам рассчитать стоимость подключения расширения «Личный кабинет 1С-Отчётности» на оставшийся срок основной лицензии 1С-Отчётности
 
 ![image](https://github.com/user-attachments/assets/3f978a4a-aac1-4b73-bc3c-cba313e7a8d9)
 
-# Key features
+# Основные возможности
 
-## input check
+## Проверка ввода
 ![image](https://github.com/user-attachments/assets/cb14c9b7-c96e-46fc-8a08-91b3c93d4c09)
 
-If the user input is incorrect, the calculator will report an error and will not display the final cost until all errors are corrected. 
-Errors:
-- INN check for uniqueness
-- checking dates for validity
+Если пользовательский ввод некорректен, калькулятор сообщит об ошибке и не отобразит итоговую стоимость до тех пор, пока все ошибки не будут устранены.  
+Ошибки:
+- проверка ИНН на уникальность
+- проверка корректности дат
 
-## Responsive design
-The interface looks good on screens of different sizes
+## Адаптивный дизайн  
+Интерфейс хорошо отображается на экранах разных размеров
 
-## Ease of use
-The interface allows any user to use it comfortably
+## Удобство использования  
+Интерфейс позволяет любому пользователю комфортно работать с калькулятором
 
-# Startup instructions
-1. Clone or download this repository.
-2. Open the `index.html` file in your web browser.
+# Инструкции по запуску  
+1. Клонируйте или скачайте данный репозиторий.  
+2. Откройте файл `index.html` в веб-браузере.
 
-You can do this in several ways:
+Сделать это можно несколькими способами:
 
-- **Option 1**: Double-click `index.html` to open it with your default browser.
-- **Option 2**: Right-click `index.html` and select _"Open with..."_ → choose your browser.
-- **Option 3** (via terminal):
+- **Вариант 1**: дважды щёлкните по `index.html`, чтобы открыть его в браузере по умолчанию.  
+- **Вариант 2**: кликните правой кнопкой по `index.html` и выберите _«Открыть с помощью…»_ → выберите браузер.  
+- **Вариант 3** (через терминал):
 
 ```bash
-cd path/to/project-folder
-start index.html          # On Windows
-open index.html           # On macOS
-xdg-open index.html       # On Linux
-```
-
-# Change of tariffs
-
-If you need to change the tariffs, you need to change the corresponding fields in the tariffs.js file.
-
-![image](https://github.com/user-attachments/assets/d8894c54-67e7-47e7-85cb-77b6778c0e90)
-
-
-
-
-
-
+cd путь/до/папки-проекта
+start index.html          # В Windows
+open index.html           # В macOS
+xdg-open index.html       # В Linux
+]
