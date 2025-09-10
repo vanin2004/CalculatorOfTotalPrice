@@ -34,4 +34,6 @@ cd путь/до/папки-проекта
 start index.html          # В Windows
 open index.html           # В macOS
 xdg-open index.html       # В Linux
-]
+```
+
+github: https://github.com/vanin2004/CalculatorOfTotalPrice
